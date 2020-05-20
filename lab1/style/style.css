@@ -1,0 +1,52 @@
+html{
+    background-color: aquamarine;
+}
+body{
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+
+}
+h1 {
+	font-size: 60px;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	color: darkgreen; 
+    text-shadow: 3px 3px 1px black;
+    border: 2px solid green;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    align: center;
+}
+h2{
+    font-size: 20px;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	color: lightslategray; 
+
+}
+#signature {
+    text-align: right;
+    color: red;
+    font-style: italic;
+    font-size: 75%;
+}
+p{
+    text-align: center;
+
+}
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #ffff66;  /* yellow */
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+  }

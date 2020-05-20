@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <style type="text/css">
+            .likert li {
+            float: left;
+            list-style-type: none;
+        }
+        </style>
+        <meta charset="utf-8">
+            <link href="style/style.css" rel="stylesheet" type="text/css">
+        <title>Survey</title>
+
+    </head>
+    <body>
+        <h1>Survey</h1>
+        <form method="post" id="myform">
+            <h2>Please fill it</h2>
+            <br>
+            <br>
+
+
+            <h2>What do you think of the UI in this<a href="https://world.taobao.com">Taobao</a> website</h2>
+            <!--click the link-->
+            
+            <br>
+            <br>
+            <a href="https://world.taobao.com">
+                <img src= "Taobao_images.PNG" alt="Taobao" width="550" height="500">
+            </a>
+
+            <div class="question">
+            <h2>Personal information</h2>
+            <p><label>Frist Name:<input type="text" name="Fname"> </label></p>
+            <p><label>Last Name:<input type="text" name="Lname"> </label></p>
+            <p><label>E-mail:<input type="text" name="Email" placeholder="Please enter"></label></p>
+            <br>
+            <br>
+
+            </div>
+
+            <div class="question1">
+                
+
+                <h2>What is your favorite sports</h2>
+                <label for="sports">Choose a sports:</label>
+                <select id="sports">
+                    <option value="basketball">Basketball</option>
+                    <option value="swimming">Swimming</option>
+                    <option value="football">Football</option>
+                    <option value="hockey">Hockey</option>
+                </select>
+
+                <h2>What are your favorite classes</h2>
+                <input type="checkbox" name="Class" value="math">Math
+                <input type="checkbox" name="Class" value="cs">CS
+                <input type="checkbox" name="Class" value="eco">Economy
+                <input type="checkbox" name="Class" value="adm">Bussiness
+            </div>
+            
+            <div class="question2">
+                <h2>What year are you in college</h2>
+                <p>
+                    <input type="radio" name="year" value="Fyear">First year
+                    <input type="radio" value="Syear" name="year">Second year
+                    <input type="radio" value="Tyear" name="year">Third year
+                    <input type="radio" value="Fyear" name="year">Fourth year
+                    <input type="radio" value="Gyear" name="year">Graduate
+                </p>
+
+                <h2>Do you know TaoBao</h2>
+                <ul class="likert">
+                    <li> Very familiar </li>
+                    <li><input type="radio" name="guilty" value="1" /></li>
+                    <li><input type="radio" name="guilty" value="2" /></li>
+                    <li><input type="radio" name="guilty" value="3" /></li>
+                    <li><input type="radio" name="guilty" value="4" /></li>
+                    <li><input type="radio" name="guilty" value="5" /></li>
+                    <li> don't know </li>
+                  </ul>
+            </div>
+            <br>
+            <br>
+            
+		
+	        Comments:<br>
+	        <textarea rows="5" cols="30"></textarea>
+			
+	        <br>
+	        <br>
+            <br>
+            <br>
+	        <button id="submitButton" type="button" class="block">
+		        SUBMIT your questionnaire
+	        </button>
+		
+	        <p id="signature">Site created by Zhihao Yin</p>	
+
+
+
+        </form>
+
+        
+   
+    </body>
+</html>
