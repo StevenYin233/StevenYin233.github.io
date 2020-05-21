@@ -4,8 +4,10 @@
         <style type="text/css">
             .likert li {
             float: left;
+
             list-style-type: none;
         }
+ 
         </style>
         <meta charset="utf-8">
             <link href="style/style.css" rel="stylesheet" type="text/css">
@@ -14,7 +16,7 @@
     </head>
     <body>
         <h1>Survey</h1>
-        <form method="post" id="myform">
+        <form method="post" id="myform" action="index.php">
             <h2>Please fill it</h2>
             <br>
             <br>
@@ -68,24 +70,27 @@
                     <input type="radio" value="Gyear" name="year">Graduate
                 </p>
 
-                <h2>Do you know TaoBao</h2>
-                <ul class="likert">
-                    <li> Very familiar </li>
-                    <li><input type="radio" name="guilty" value="1" /></li>
-                    <li><input type="radio" name="guilty" value="2" /></li>
-                    <li><input type="radio" name="guilty" value="3" /></li>
-                    <li><input type="radio" name="guilty" value="4" /></li>
-                    <li><input type="radio" name="guilty" value="5" /></li>
-                    <li> don't know </li>
-                  </ul>
+
+
+
+                   <h2>Do you know TaoBao</h2>
+                    <label>very familiar</label>
+                    <input type="radio" name="tb" value="1" />
+                    <input type="radio" name="tb" value="2" />
+                    <input type="radio" name="tb" value="3" />
+                    <input type="radio" name="tb" value="4" />
+                    <input type="radio" name="tb" value="5" />
+                    <label>don't know </label> 
+         
+                
             </div>
             <br>
             <br>
             
-		
+            <div class="question3">
 	        Comments:<br>
-	        <textarea rows="5" cols="30"></textarea>
-			
+	        <textarea rows="7" cols="80"></textarea>
+			</div>
 	        <br>
 	        <br>
             <br>

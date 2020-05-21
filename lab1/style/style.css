@@ -27,7 +27,8 @@ h2{
 	text-align: center;
 	margin: 0;
 	padding: 20px 0;
-	color: lightslategray; 
+    color: lightsalmon; 
+    
 
 }
 #signature {
@@ -50,3 +51,27 @@ p{
     cursor: pointer;
     text-align: center;
   }
+
+table {
+	border: 1px solid black;
+	background-color: #f1f1c1;
+}
+.question1 {
+    background-color: rgb(128, 156, 156);
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid green;
+  }
+  .question2 {
+    background-color: rgb(128, 156, 156);
+    color: white;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid green;
+  }
+.question3{
+    text-align: center;
+}
