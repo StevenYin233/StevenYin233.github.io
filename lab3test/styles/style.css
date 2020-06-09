@@ -1,0 +1,158 @@
+/* code 9-146 are inspired from  https://www.w3schools.com/howto/default.asp*/
+/* code 148 -152 are inspired from  https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module2-Grocery/styles/style.css*/
+
+
+em{
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+}
+.choose_products{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+     
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+.check{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.re_select{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.block{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+}
+.tabcontent2 {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+.breadcrumb{
+    margin: auto;
+    border-bottom: 1px solid #ccc;
+    width:860px;
+   
+    padding: 0px 10px 0px 10px;
+    
+}
+ul.breadcrumb {
+   
+    padding: 30px 10px;
+    list-style: none;
+    background-color: #eee;
+}
+ul.breadcrumb li {
+    cursor: pointer;
+    display: inline;
+    font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li  {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li:hover {
+    color: black;
+}
+ul.breadcrumb li#onlink{
+    
+    background-color: greenyellow;
+    border-bottom: 1px solid #ffffff;
+
+}
+
+ul.breadcrumb li#onlink:hover{
+    background: #ffffff;
+    color: #000000;
+}
+.tabcontent{
+    display: none;
+    margin: auto;
+    width: 860px;
+    overflow: scroll;
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 760px;
+    border-top: none;
+    background: #ffffff;
+}
+#signature {
+    text-align: right;
+    color: red;
+    font-style: italic;
+    font-size: 75%;
+}
+.tips{
+    font-size: smaller;
+    font-style: italic;
+    color: blueviolet;
+}
