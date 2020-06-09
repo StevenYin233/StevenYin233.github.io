@@ -156,3 +156,10 @@ ul.breadcrumb li#onlink:hover{
     font-style: italic;
     color: blueviolet;
 }
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    color: aqua; 
+    text-shadow: 3px 3px 1px black;
+}

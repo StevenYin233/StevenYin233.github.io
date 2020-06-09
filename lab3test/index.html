@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles/style.css" type="text/css">
     </head>
     <body>
-        
+        <h1>Welcome to the best store</h1>
         <!--I chose to use breadcrumbs as my navigation pattern-->
         <ul class="breadcrumb">
             <li  onclick="openInfo(event,'Client')" > Preselect</li>
@@ -21,10 +21,12 @@
         <div id = "Client" class="tabcontent">
             <h2>Clent infomation</h2>
             <p>Tell us a bit about you</p>
+            <!--I changed the word from restrictions to preference-->
             Please list your <em>preference</em>
          
             <br>
             <br>
+            <!--I change the conponents from list to radio buttons-->
             <input type="radio" id="dieSelect" name="dietSelect" onchange="populateListProductChoicesforVegetables(this.id,'displayProduct2'); populateListProductChoicesforMeat(this.id,'displayProduct3');populateListProductChoicesforFruits(this.id,'displayProduct4');populateListProductChoicesforGrains(this.id,'displayProduct5')" value="Vegetarian">Vegetarian<br>
             <input type="radio" id="dieSelect2" name="dietSelect" onchange=" populateListProductChoicesforVegetables(this.id,'displayProduct2'); populateListProductChoicesforMeat(this.id,'displayProduct3');populateListProductChoicesforFruits(this.id,'displayProduct4');populateListProductChoicesforGrains(this.id,'displayProduct5')" value="GlutenFree">GlutenFree<br>
             <input type="radio" id="dieSelect3" name="dietSelect" onchange=" populateListProductChoicesforVegetables(this.id,'displayProduct2'); populateListProductChoicesforMeat(this.id,'displayProduct3');populateListProductChoicesforFruits(this.id,'displayProduct4');populateListProductChoicesforGrains(this.id,'displayProduct5')" value="VegetarianAndGlutenFree">VegetarianAndGlutenFree<br>
@@ -40,6 +42,7 @@
     
         <div id="Products" class="tabcontent">
             <h3>Your targeted products</h3>
+            <!--same as here-->
             <p>We preselected products based on your <em>preference</em></p>
             <p>All the items have been categorized, Please check through <em>tabs</em></p>
                Choose items to buy:
@@ -81,7 +84,7 @@
 
           <div id="Cart" class="tabcontent">
             <h3>Shopping Cart</h3>
-            
+            <!--I describe the shopping cart is based on which preference-->
             <p id="content"></p>
             <p class="tips">(If you have any problems about products, feel free to contact us!)</p>
             <div id="displayCart"></div>
