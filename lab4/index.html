@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hair salon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+        <script>$(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();   
+          });</script>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container p-3 my-3 bg-dark text-white">
+            <h1>Welcome to SummerWind Hair Salon</h1>
+            <img src= "images/logo.jpg" alt="logo" width="100" height="100" > <!--photo from www.gardenson.cn-->
+            <dl>
+                <dt>SummerWind Hair Salon, you can trust it</dt>
+                <dd>- 800 Xianqian street,Suzhou China</dd>
+              </dl>     
+          </div>
+
+        <div class="row p-3">
+            <div class="col-sm-3">Service</div>
+            <div class="col-sm-3">Appointment</div>
+            <div class="col-sm-3">Price</div>
+            <div class="col-sm-3">Promotion</div>
+        </div>
+
+        <div class="container">
+        <div class="jumbotron">
+        <h2>Let us tell you about our expertise</h2>    
+        <img src= "images/scissor.jpg" alt="scissor" width="100" height="100" class="scissor"> <!--photo from https://huaban.com/pins/810285172/-->      
+        <img src= "images/wash.jpg" alt="wash" width="100" height="100" class="wash"><!--http://www.51yuansu.com/sc/vvlqzzagdg.html-->
+        <img src= "images/dry.jpg" alt="dry" width="100" height="100" class="dry"><!--https://cn.dreamstime.com/-->
+        <br>
+        <br>
+        <p class="cut" style="display: inline;"><mark>CUT HAIR</mark> </p>
+        <P class="washhair"  style="display: inline;"><mark>WASH HAIR</mark></P>
+        <p class = "dye" style="display: inline;"><mark> DYE THE HAIR</mark></p>
+        </div>
+
+        <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+        <!-- Might be (or not) useful to show some information to the user -->
+        <div class="container">
+            <h2>Service description</h2>
+            <p>Here is a list of services offered</p>            
+            <table class="table table-primary table-hover">
+                <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                    <th>Prices</th>
+                    <th>Membership Prices</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Haircut</td>
+                    <td>Hairstyles:Fade and Taper,Undercut,Pompadour and so on</td>
+                    <td>$30</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Hair Wash</td>
+                    <td>We will wash your hair carefully, we will provide drying as well</td>
+                    <td>$20</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Coloring</td>
+                    <td>Our products are unharmful and good, we gurantee hair color will not come out in 3 months</td>
+                    <td>$210</td>
+                    <td>$170</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            <h2>Alert</h2>
+            <p>We have something important to say</p>
+            <div class="alert alert-warning alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Warning</strong> During the specific period, please wear face masks!
+            </div>
+        </div>
+        <!--container-md p-3 my-3 border bg-light text-success-->
+        <div class="container-md p-3 my-3 border bg-light ">
+            <h2> short, medium, long, or hair color cuts</h2>            
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                  <li data-target="#demo" data-slide-to="4"></li>
+                  <li data-target="#demo" data-slide-to="5"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/short.jpg" alt="image1" width="1100" height="500"><!--photo from https://www.menshairstylestoday.com/cool-short-haircuts-and-hairstyles-for-men/-->
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/fade.jpg" alt="image2" width="1100" height="500"><!--https://www.pinterest.ca/pin/556124253965715391/-->
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/undercut.jpg" alt="image3" width="1100" height="500"><!--photo from https://www.pinterest.ca/-->
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/long.jpg" alt="image4" width="1100" height="500"><!--photo from https://www.pinterest.ca/-->
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/purple.jpg" alt="image5" width="1100" height="500"><!--photo from https://www.garnierusa.com/tips-how-tos/purple-hairstyles-purple-hair-color-ideas-->
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/pink.jpg" alt="image6" width="1100" height="500"><!--https://medium.com/@marketing_32934/4-ways-to-maintain-perfect-dye-hair-color-1e018599b177-->
+                  </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            <h4 class="mood1">Why not have a try!</h4>
+            <button type="button" class="btn btn-primary">Book</button><br>
+            <br>
+            <a href="#" data-toggle="tooltip" title="$0 applying fee, do not worry"><button type="button" class="btn btn-primary">Apply for the Membership</button></a>
+         
+
+        </div>
+        <!-- Including a modal https://www.w3schools.com/bootstrap4/bootstrap_modal.asp -->
+        <!-- Modals are useful for additional information or questions -->
+        <!-- Here the modal is used for a little survey -->
+         <div class="container">
+            <h3>Customer's survey</h3>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mySurvey">Open Survey</button>
+          
+            <!-- Modal -->
+            <div class="modal fade" id="mySurvey" role="dialog">
+                <div class="modal-dialog">  
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h2>How do you think about our services?</h2>
+                            <p>Every customer's rating is important to us</p>
+                            <form>
+                            <div class="radio">
+                                <label><input type="radio" value="" id="ex1" name="rate">Good</label><br>
+                                <label><input type="radio" value="" id="ex2" name="rate">Average</label><br>
+                                <label><input type="radio" value="" id="ex3" name="rate">Bad</label>
+       
+                            </div>
+
+                            <div class="button">
+                                <button type="button" class="btn btn-primary">Submit
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>     
+            </div>
+            </div>         
+        </div>
+
+        <div class="container p-3">    
+            <h3>Meet our hairdressers</h3>
+            <div class="card-columns">
+            <div class="card img-fluid" style="width:200px">
+              <img class="card-img-top" src="images/employee1.jpg" alt="Card image" style="width:100%"><!--www.baidu.com-->
+              <div class="card-img-overlay">
+                <h4 class="card-title">Jean James</h4>
+                <p class="card-text"><em>The curly hair specialist</em></p>
+                <a href="#profile" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+              </div>               
+                <div id="profile" class="collapse p-3">
+                    <p>Mr.James is the owner of SummerWind Hair Salon</p>
+                    <p>James is superfriendly and responsible</p>
+                    <p>James has been cutting hair for 10 years</p>
+                </div>
+            </div>
+            <div class="card img-fluid" style="width:200px">
+                <img class="card-img-top" src="images/employee2.jpg" alt="Card image" style="width:100%"><!--www.baodu.com-->
+                <div class="card-img-overlay">
+                  <h4 class="card-title">Linda Klay</h4>
+                  <p class="card-text"><em>The professional hair specialist</em></p>
+                  <a href="#profile1" class="btn btn-primary" data-toggle="collapse">See Profile</a>
+                </div>               
+                  <div id="profile1" class="collapse p-3">
+                      <p>Linda is most welcome hair specialist in this hair salon</p>
+                      <p>Linda is good at cutting the hair</p>
+                      <p>Linda has been cutting hair for 15 years</p>
+                  </div>
+              </div>
+        </div>
+        </div>
+        <!-- Collapsible with multiple items - accordion -->
+        <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+        <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+        <!-- could work well.  You can use other patterns too.  This is just an example. -->
+        <div class="container">
+            <div class="container-md p-3 my-3 border bg-dark text-white">
+                <h1>SummerWind Hair Salon</h1>
+                <p>Haircutting is our business</p>
+            </div>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                    </div>
+                    <div id="collapseService" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Here is our list of services</p>
+                            <label for="sel1">Select Services (select one):</label>
+                            <select class="form-control" id="sel1" name="sellist1">
+                              <option>Haircut</option>
+                              <option>Colouring</option>
+                              <option>Hairwash</option>
+                              <option>Haircut and Hairwash</option>
+                            </select>
+                            <br>
+                            
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        
+                    </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                    </div>
+                    <div id="collapseDate" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>What date?</p>
+                            <!-- Bootstrap has various input components. Some examples are given here: -->
+                            <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                            <div class="form-group row">
+                                <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                                <div class="col-10">
+                                    <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                                </div>
+                                
+                                
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Contact us</a>
+                    </div>
+                    <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            <p>Why not have a try? Apply VIP right now!</p>
+                            <p>Form to enter name, email, phone</p>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                              </div>
+                              <div class="form-group">
+                                <label for="phone">Password:</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Enter phone number" name="pnumber">
+                              </div>
+                              <div class="form-group form-check">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                </label>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseaddress">Our address and contact information</a>
+                    </div>
+                    <div id="collapseaddress" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <p class="mood1">Please feel free to contact us!</p>
+                            <label>SummerWind Hair Salon</label><br>
+                            <label>800 Xianqian street,Suzhou,China</label><br>
+                            <label>Tel:23646722</label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <p id="signature">Site created by Zhihao Yin</p>
+        
+    </body>
+</html>
