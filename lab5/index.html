@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+ <html lang="en"> 
+    <head>
+        <meta charset="utf-8">
+        <title>lab5</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+    
+        <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+        <!-- which is built on top of JQuery and offers additional possibilities -->
+        <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      
+        <!-- Your own script -->
+        <script src="scripts/service.js"></script>
+    
+        <!-- Your own additional style sheet -->
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <!-- Using the collapsible Navbar, so we see the hamburger menu icon -->
+        <!-- It really has become a standard. -->
+        <!-- As your page is a vertical page (Module 4 requirement), you mus use the navbar -->
+        <!-- to just jump to parts of the page. What I put as First/Second/Third here would -->
+        <!-- be sections in your page. -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">    
+            <a class="navbar-brand" href="#">SummerWind Hair salon</a>
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#first"><img src="images/services.png" alt="logo" style="width:40px;">Services</a><!--<a target="_blank" href="https://icons8.com/icons/set/barber-pole">Barber Pole icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#second"><img src="images/hairdresser.png" alt="logo" style="width:40px;">Hairdresser</a><!--<a target="_blank" href="https://icons8.com/icons/set/hairdresser">Hairdresser icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#third"><img src="images/payment.png" alt="logo" style="width:40px;">Payment</a><!--<a target="_blank" href="https://icons8.com/icons/set/card-in-use">Card Payment icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+                    </li>   
+                </ul>
+            </div>  
+        </nav>
+        <br>
+
+        <div class="container p-3 my-3 bg-dark text-white">
+            <h1>Welcome to SummerWind Hair Salon</h1>
+            <img src= "images/logo.jpg" alt="logo" width="100" height="100" > <!--photo from www.gardenson.cn-->
+            <dl>
+                <dt>SummerWind Hair Salon, you can trust it</dt>
+                <dd>- 800 Xianqian street,Suzhou China</dd>
+              </dl>     
+        </div>
+
+        <div class="row p-3">
+            <div class="col-sm-3">Service</div>
+            <div class="col-sm-3">Appointment</div>
+            <div class="col-sm-3">Price</div>
+            <div class="col-sm-3">Promotion</div>
+        </div>
+        <div class="container" id="first">
+            <h3><img src="images/services.png" alt="logo" style="width:48px;">Let us tell you about our expertise</h3>
+            <img src= "images/scissor.jpg" alt="scissor" width="100" height="100" class="scissor"> <!--photo from https://huaban.com/pins/810285172/-->      
+             <p class="cut" style="display: inline;"><mark>CUT HAIR</mark> </p><br>
+             <br>
+            <img src= "images/wash.jpg" alt="wash" width="100" height="100" class="wash"><!--http://www.51yuansu.com/sc/vvlqzzagdg.html-->
+            <P class="washhair"  style="display: inline;"><mark>WASH HAIR</mark></P><br>
+            <br>
+            <img src= "images/dry.jpg" alt="dry" width="100" height="100" class="dry"><!--https://cn.dreamstime.com/-->
+            <p class = "dye" style="display: inline;"><mark> COLORING</mark></p>
+            <br>
+            <br>
+            <img src="images/spa.jpg" alt="spa" width="100" height="100" class="spa"><!--https://www.123rf.com/photo_80648969_stock-vector-cosmetician-applying-cream-mask-on-young-woman-face-in-spa-salon-top-view-cartoon-vector-illustratio.html-->
+            <p class="spa face" style="display: inline;"><mark>SPA</mark></p>
+        </div>
+
+  
+        
+    </body>
+</html>
