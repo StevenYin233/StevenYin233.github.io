@@ -21,11 +21,12 @@
         
         <!-- Your own script -->
         <script src="scripts/service.js"></script>
-        <script>
+      <!--
+      <script>
             $(document).ready(function(){
               $('[data-toggle="tooltip"]').tooltip();   
             });
-        </script>
+        </script>-->
         <script>
             $(document).ready(function() { 
             $(".r1, .r2").checkboxradio({}); 
@@ -226,7 +227,7 @@
                 <button type="button" class="btn btn-primary">Book</button><br>
                 <br>
   
-                <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="$0 applying fee, do not worry">Apply for the Membership</button>
+                <button type="button" class="btn btn-primary"  title="$0 applying fee, do not worry" id="apply">Apply for the Membership</button>
             </div>
         </div>
         <br>
@@ -328,7 +329,7 @@
                             <div class="form-group">
                                 <label for="email">Email:</label>
                                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                              </div>
+                            </div>
                               <div class="form-group form-check">
                                 <label class="form-check-label">
                                   <input class="form-check-input" type="checkbox" name="remember"> Remember me
@@ -353,7 +354,75 @@
                 </div>   
             </div>
         </div>
+        <br>
+        <br>
+        <div class="container">
+        <h3><img src="images/payment.png" alt="logo" style="width: 48px;">Payment</h3>
+        </div>
+        <div  id="fifth" class="container p-3 my-3 border">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseJamesInfo">Book an appointment with James</a>
+                    </div>
+                    <div id="collapseJamesInfo" class="collapse" data-parent="#accordion">
+                            <div class="card-body">
+                                <p><em>Sir/Madam, you choose to book an appointment with James</em></p>
+                                <p>Please choose the services,</p>
+                                <label for="sel1">Select Services (select one):</label>
+                                <select class="form-control" id="sel1" name="sellist1">
+                                  <option>Haircut</option>
+                                  <option>Colouring</option>
+                                  <option>Hairwash</option>
+                                  <option>Spa</option>
+                                  <option>Haircut and Hairwash</option>
+                                </select>
+                                <br>
 
+                                <p>Date: <input type="text" id="james"></p>
+                                <p>Phone Number Example <input value="(xxx)-xxx-xxxx" type="text" id="phone"></p>
+                                <p>Credit Card: <input type="text" id="debit" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
+                                
+
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseKlay">Book an appointment with Klay</a>
+                    </div>
+                    <div id="collapseKlay" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            <p><em>Sir/Madam, you choose to book an appointment with Klay</em></p>
+                            <p>Please choose the services,</p>
+                            <label for="sel2">Select Services (select one):</label>
+                            <select class="form-control" id="sel2" name="sellist2">
+                              <option>Haircut</option>
+                              <option>Colouring</option>
+                              <option>Hairwash</option>
+                              <option>Spa</option>
+                              <option>Haircut and Hairwash</option>
+                            </select>
+                            <br>
+
+                            <p>Date: <input type="text" id="klay"></p>
+                            <p>Phone Number Example <input value="(xxx)-xxx-xxxx" type="text" id="phone1"></p>
+                            <p>Credit Card: <input type="text" id="debit1" title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
+                            
+
+
+                            <button type="submit" class="btn btn-primary">Submit</button>
+ 
+                        </div>
+                    </div>
+                </div>
+
+            </div>         
+            
+        </div>
+        <p id="signature">Site created by Zhihao Yin</p>
 
           
   
