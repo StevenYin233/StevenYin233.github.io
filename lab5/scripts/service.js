@@ -155,6 +155,19 @@ $(document).ready(function(){
           "ui-tooltip": "highlight"
         }
       });
+      $( "#r1" ).checkboxradio({
+        classes: {
+          "ui-checkboxradio": "highlight"
+        }
+      });
+      
+
+   
+      $( "#r2" ).checkboxradio({
+        classes: {
+          "ui-checkboxradio": "highlight"
+        }
+      });
 
     $("#apply").tooltip({
         classes: {
