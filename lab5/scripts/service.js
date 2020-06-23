@@ -17,6 +17,16 @@ function validatePhone(txtPhone) {
         return false;
     }
 }
+function validateCredit(number){
+    var a = document.getElementById(number).value;
+    var filter = /^\d{16}$/;
+    if (filter.test(a)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 
 // Using date restrictions on datepicker
@@ -62,7 +72,7 @@ $(document).ready(function(){
     $("#phone").on("change", function(){
         if (!validatePhone("phone")){
             alert("Wrong format for phone");
-            $("#phone").val("(xxx)");
+            $("#phone").val("(xxx)-xxx-xxxx");
             $("#phone").addClass("error");
         }
         else {
@@ -70,13 +80,33 @@ $(document).ready(function(){
         }
     });
     $("#phone1").on("change", function(){
-        if (!validatePhone("phone")){
+        if (!validatePhone("phone1")){
             alert("Wrong format for phone");
-            $("#phone1").val("(xxx)");
+            $("#phone1").val("(xxx)-xxx-xxx");
             $("#phone1").addClass("error");
         }
         else {
             $("#phone1").removeClass("error");
+        }
+    });
+    $("#debit").on("change", function(){
+        if (!validateCredit("debit")){
+            alert("Wrong format for card number,please enter 16 digits card number");
+            $("#debit").val("xxxx-xxxx-xxxx-xxxx");
+            $("#debit").addClass("error");
+        }
+        else {
+            $("#debit").removeClass("error");
+        }
+    });
+    $("#debit1").on("change", function(){
+        if (!validateCredit("debit1")){
+            alert("Wrong format for card number,please enter 16 digits card number");
+            $("#debit1").val("xxxx-xxxx-xxxx-xxxx");
+            $("#debit1").addClass("error");
+        }
+        else {
+            $("#debit1").removeClass("error");
         }
     });
   
@@ -155,6 +185,7 @@ $(document).ready(function(){
           "ui-tooltip": "highlight"
         }
       });
+      /*
       $( "#r1" ).checkboxradio({
         classes: {
           "ui-checkboxradio": "highlight"
@@ -168,7 +199,7 @@ $(document).ready(function(){
           "ui-checkboxradio": "highlight"
         }
       });
-
+      */
     $("#apply").tooltip({
         classes: {
           "ui-tooltip": "highlight"
