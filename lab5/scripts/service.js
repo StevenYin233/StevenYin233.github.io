@@ -187,6 +187,17 @@ $(document).ready(function(){
           "ui-tooltip": "highlight"
         }
       });
+      $("#phone").tooltip({
+        classes: {
+          "ui-tooltip": "highlight"
+        }
+      });
+      $("#phone1").tooltip({
+        classes: {
+          "ui-tooltip": "highlight"
+        }
+      });
+
       /*
       $( "#r1" ).checkboxradio({
         classes: {

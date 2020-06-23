@@ -82,29 +82,28 @@
               </dl>     
         </div>
 
-        <div class="row p-3">
-            <div class="col-sm-3">Service</div>
-            <div class="col-sm-3">Appointment</div>
-            <div class="col-sm-3">Price</div>
-            <div class="col-sm-3">Promotion</div>
-        </div>
+
         <div class="container" id="first">
             <h3><img src="images/services.png" alt="logo" style="width:48px;">Let us tell you about our expertise and services</h3>
-            <img src= "images/scissor.jpg" alt="scissor" width="120" height="120" class="scissor"> <!--photo from https://huaban.com/pins/810285172/-->      
+            <div class="container p-3 my-3 border">
+            
+            <img src= "images/haircut.jpg" alt="scissor" width="200" height="200" class="scissor"> <!--photo from https://www.linkedin.com/company/djthebarber-->      
            
             <p class="cut" style="display: inline;"><mark>HAIRCUT </mark> </p><br>
-             <br>
+            <br>
 
-            <img src= "images/wash.jpg" alt="wash" width="120" height="120" class="wash"><!--http://www.51yuansu.com/sc/vvlqzzagdg.html-->
+            <img src= "images/hairwash.jpg" alt="wash" width="200" height="200" class="wash"><!--https://www.ouidad.com/blog/curly-hair-routine-101/wash-curly-hair-->
             <P class="washhair"  style="display: inline;"><mark> HAIR WASH</mark></P><br>
             <br>
-            <img src= "images/dry.jpg" alt="dry" width="120" height="120" class="dry"><!--https://cn.dreamstime.com/-->
+            <img src= "images/color.jpg" alt="dry" width="200" height="200" class="dry"><!--https://www.insider.com/how-to-treat-allergic-reaction-to-hair-dye-chemical-ppd-2019-8-->
             <p class = "dye" style="display: inline;"><mark> COLORING</mark></p>
             <br>
             <br>
-            <img src="images/spa.jpg" alt="spa" width="120" height="120" class="spa"><!--https://www.123rf.com/photo_80648969_stock-vector-cosmetician-applying-cream-mask-on-young-woman-face-in-spa-salon-top-view-cartoon-vector-illustratio.html-->
-            <p class="spa face" style="display: inline;"><mark>FACIAL SPA</mark></p>
-
+            <img src="images/facespa.jpg" alt="spa" width="200" height="200" class="spa"><!--https://skincareandbody.com/intraceutical-oxygen-facial--->
+            <p class="spaface" style="display: inline;"><mark>FACIAL SPA</mark></p>
+            
+        
+            </div>
             <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
             <!-- Might be (or not) useful to show some information to the user -->
             <div class="container">
@@ -225,12 +224,12 @@
                     <span class="carousel-control-next-icon"></span>
                     </a>
                 </div>
-                <h4 class="mood1">Why not have a try!</h4>
-                <button type="button" class="btn btn-primary">Book</button><br>
-                <br>
+            </div>  
+                
+           
   
-                <button type="button" class="btn btn-primary"  title="$0 applying fee, do not worry" id="apply">Apply for the Membership</button>
-            </div>
+                
+           
         </div>
         <br>
         <div class="container" id="second">
@@ -356,10 +355,10 @@
         </div>
         <br>
         <br>
-        <div class="container">
+        <div class="container" id="fifth">
         <h3><img src="images/payment.png" alt="logo" style="width: 48px;">Payment</h3>
         </div>
-        <div  id="fifth" class="container p-3 my-3 border">
+        <div class="container p-3 my-3 border">
             <div id="accordion">
                 <div class="card">
                     <div class="card-header">
@@ -380,7 +379,7 @@
                                 <br>
 
                                 <p>Date: <input type="text" id="james"></p>
-                                <p>Phone Number(no space): <input value="(xxx)-xxx-xxxx" type="text" id="phone"></p>
+                                <p>Phone Number(no space): <input value="(xxx)-xxx-xxxx" title="We will protect your privacy, do not worry" type="text" id="phone"></p>
                                 <p>Credit Card(no space): <input type="text" id="debit" value= "xxxx-xxxx-xxxx-xxxx"title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
                                 
 
@@ -409,7 +408,7 @@
                             <br>
 
                             <p>Date: <input type="text" id="klay"></p>
-                            <p>Phone Number(no space):<input value="(xxx)-xxx-xxxx" type="text" id="phone1"></p>
+                            <p>Phone Number(no space):<input value="(xxx)-xxx-xxxx" type="text" id="phone1" title="We will protect your privacy, do not worry"></p>
                             <p>Credit Card(no space): <input type="text" id="debit1" value= "xxxx-xxxx-xxxx-xxxx"title="We ask for your credit card number in case of no-show, 20$ will be charged."></p>
                             
 
