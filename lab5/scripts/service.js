@@ -173,6 +173,37 @@ $(document).ready(function(){
     $("#debit1").on("mouseleave", function(){
         $("#debit1").removeClass("showInput");
     });
+    $("#klay").on("mouseenter", function(){
+        $("#klay").addClass("showInput");
+    });
+
+    $("#klay").on("mouseleave", function(){
+        $("#klay").removeClass("showInput");
+    });
+    $("#james").on("mouseenter", function(){
+        $("#james").addClass("showInput");
+    });
+
+    $("#james").on("mouseleave", function(){
+        $("#james").removeClass("showInput");
+    });
+
+
+    $("#phone").on("mouseenter", function(){
+        $("#phone").addClass("showInput");
+    });
+
+    $("#phone").on("mouseleave", function(){
+        $("#phone").removeClass("showInput");
+    });
+
+    $("#phone1").on("mouseenter", function(){
+        $("#phone1").addClass("showInput");
+    });
+
+    $("#phone1").on("mouseleave", function(){
+        $("#phone1").removeClass("showInput");
+    });
   
     // https://jqueryui.com/tooltip/ 
     // The class "highlight" used here is predefined in JQuery UI
