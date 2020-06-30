@@ -1,0 +1,186 @@
+<!--code line 14-21 55-90 are inspired from Professor https://github.com/carolinebarriere/carolinebarriere.github.io/blob/master/SEG3125-Module6-SurveyAnalysis/views/niceSurvey.html-->
+<!--code line 25-54 92-147 are inspired from W3Schools https://www.w3schools.com/bootstrap4-->
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      /* Make the image fully responsive */
+      .carousel-inner img {
+        width: 100%;
+   
+      }
+    </style>
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();   
+      });
+    </script>
+      
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">    
+      <a class="navbar-brand" href="#">Survey Qestions about:</a>
+     
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="#first"><img src="http://localhost:3000/images/contact.png" alt="logo" style="width:40px;">Contact Information</a><!--<a target="_blank" href="https://icons8.com/icons/set/contact">Contact icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+              </li> 
+              <li class="nav-item">
+                  <a class="nav-link" href="#second"><img src="http://localhost:3000/images/class.png" alt="logo" style="width: 40px;">Class </a><!--<a target="_blank" href="https://icons8.com/icons/set/class">Class icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#third"><img src="http://localhost:3000/images/sports.png" alt="logo" style="width:40px;">Sports</a><!--<a target="_blank" href="https://icons8.com/icons/set/group-of-animals">Group Of Animals icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#fourth"><img src="http://localhost:3000/images/car.png" alt="logo" style="width:40px;">Car</a><!--<a target="_blank" href="https://icons8.com/icons/set/car">Car icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#fifth"><img src="http://localhost:3000/images/survey.png" alt="logo" style="width: 40px;">Survey</a><!--<a target="_blank" href="https://icons8.com/icons/set/survey">Survey icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link" href="#sixth"><img src="http://localhost:3000/images/date.png" alt="logo" style="width: 40px;">Date</a><!--<a target="_blank" href="https://icons8.com/icons/set/time">Time icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
+            </li>
+          </ul>
+      </div>  
+  </nav>
+	
+	<div class="container p-3 my-3 border" id="survey">
+    <h1 style="text-align:center; font-style: italic; color:rebeccapurple">Survey</h1>
+    <form>
+      <div class="container">
+      <h2>Please fill it</h2>
+      <br>
+      <br>
+      <h2>What do you think of the UI in this <a href="https://world.taobao.com">Taobao</a> website</h2>
+      <h4>(you can write comments or thinkings in a comment box, which is in the bottom of the survey)</h4>
+      <!--click the link-->
+      <br>
+      <br>
+      <a href="https://world.taobao.com" data-toggle="tooltip" title="You will jump to the Taobao.com">
+          <img src= "http://localhost:3000/images/Taobao_images.PNG" alt="Taobao" width="550" height="500">
+      </a>
+      </div>
+      <br>
+      <br>
+      <div class="container" id="first">
+      <h2><img src="http://localhost:3000/images/contact.png" alt="logo" style="width:48px;"> Please enter the personal contact information </h2>
+   
+      Name:<input type="text" name="name" placeholder="Please enter your name..." required /><br>
+      <br>
+      E-mail:<input type="text" name="email" placeholder="Please enter your email" required />
+      </div>
+      <br>
+      <br>
+      <div class="container" id="second">
+        <h2><img src="http://localhost:3000/images/class.png" alt="logo" style="width: 48px;"> What are your favorite classes </h2>
+	      I like:<br>
+        <input type="checkbox" name="class_new" value="Math"> Math<br>
+        <input type="checkbox" name="class_new" value="CS">CS<br>
+        <input type="checkbox" name="class_new" value="Economy">Economy<br>
+        
+
+        
+      </div>
+      <br>
+      <br>
+      <div class="container" id="third">
+        <h2><img src="http://localhost:3000/images/sports.png" alt="logo" style="width: 48px;"> What kind of sports do you like?</h2>
+        I like:<br>
+        <select name="sports">
+			    <option value="Basketball" selected="selected">Basketball</option>
+			    <option value="Swimming">Swimming</option>
+          <option value="Football">Football</option>
+          <option value="Hockey">Hockey</option>
+        </select>
+      </div>
+      <br>
+      <br>
+      <div class="container" id="fourth">
+        <h2><img src="http://localhost:3000/images/car.png" alt="logo" style="width: 48px;">Which kind of car do you like</h2>
+        
+        <h4>different examples of car:</h4>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="http://localhost:3000/images/suv.jpg" alt="suv" width="200" height="300"><!--https://cars.usnews.com/cars-trucks/best-suvs-under-30000-->
+            </div>
+            <div class="carousel-item">
+              <img src="http://localhost:3000/images/sedan.jpg" alt="sedan" width="200" height="300"><!--https://www.caranddriver.com/features/g22344863/full-size-sedans/-->
+            </div>
+            <div class="carousel-item">
+              <img src="http://localhost:3000/images/sportscar.jpg" alt="s_c" width="200" height="300"><!--https://www.autocar.co.uk/car-news/best-cars/top-10-best-sports-cars-->
+            </div>
+          </div>
+          
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+        I like:<br>
+        <input type="radio" value="Suv" id="suv" name="car">Suv<br>
+        <input type="radio" value="Sedan" name="car" id="sedan">Sedan<br>
+        <input type="radio" value="SportsCar" name="car" id="sportscar">SportsCar<br>
+      </div>
+      <br>
+      <div class="container" id="fifth">
+        <h2><img src="http://localhost:3000/images/survey.png" alt="logo" style="width: 48px;">How do you think our survey </h2>
+        Please rating(1-5):<br>
+        <input type="number" id="rating" name="rating" min="1" max="5">
+      </div>
+      <br>
+      <br>
+
+
+
+
+
+      <div class=" container" id="sixth">
+        <h2><img src="http://localhost:3000/images/date.png" alt="logo" style="width: 48px;">What date did you complete the questionnaire </h2>
+      
+        Date:<br>
+        <input type="date" id="date" name="date" required /><br>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+        Comments:<br>
+        <textarea rows="7" cols="80" name="comments" placeholder="Please enter comments"></textarea>
+      </div>
+      <br>
+      <br>
+      <div class="container">
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+      </div>
+    </form>
+  </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 
