@@ -1,0 +1,18 @@
+import React from 'react';
+import './mainPage.css';
+const mainPage = props =>(
+    <header className = "navbar">
+        <nav className = "navbar_mainPage">
+            <div></div>
+            <div className="logo"><a href="/">Logo</a></div>
+            <div className="items">
+                <ul>
+                    <li><a href="/">Sass</a></li>
+                    <li><a href="/">Components</a></li>
+                    <li><a href="/">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+);
+export default mainPage;
